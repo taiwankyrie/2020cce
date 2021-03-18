@@ -133,3 +133,33 @@ int main()
 	else if(a<60)  printf("F\n");
 }
 ```
+#第03週的實習課程設
+##第一題:進階題：分式化簡 
+```C
+#include <stdio.h>
+int main()
+{
+	char a[10];
+	scanf("%s", &a);
+	for(int i=0;a[i]!=0;i++)
+	{
+		if (a[i]>='0' && a[i]<='9')
+		{
+			printf("%c",a[i]);
+		}
+		else if (a[i]>='A' && a[i]<='Z')
+		{
+			a[i]+=32;
+			printf("%c",a[i]);
+		}
+		else if(a[i]>='a' && a[i]<='z')
+		{
+			a[i]-=32;
+			printf("%c",a[i]);
+		}
+		
+	}
+	printf("\n");
+	
+}
+```
